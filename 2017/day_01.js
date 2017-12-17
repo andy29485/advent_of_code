@@ -1,3 +1,5 @@
+#!/usr/bin/node
+
 fs = require('fs');
 
 function day1 (string, step) {
@@ -19,6 +21,7 @@ function day1 (string, step) {
 module.exports = day1;
 
 fs.readFile('inputs/01.txt', 'utf8', function (err, s) {
+  s = s.trim();
   console.log('part 1: '+day1(s, 1));
   console.log('part 2: '+day1(s));
 });
