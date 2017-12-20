@@ -2,7 +2,7 @@ fs = require('fs');
 
 
 
-fs.readFile('input/25.txt', 'utf8', function (err, s) {
+fs.readFile('inputs/25.txt', 'utf8', function (err, s) {
   var s = s.trim();
   var result = day25(s);
   console.log('part 1: '+result.p1);
